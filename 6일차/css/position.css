@@ -1,0 +1,108 @@
+@import url('common.css');
+
+.pos_absolute {
+    border: 1px solid #b89;
+    position: absolute;
+    left: calc(50% - 300px);
+    /* right: 50%;*/
+    top: calc(50% - 200px);
+    /*bottom: 50%;*/
+    /*left,right / top,bottom*/
+}
+
+.pos_absolute img {}
+
+.pos_absolute p {}
+
+.pos_absolute p a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.pos_absolute:nth-of-type(1) {
+    z-index: 2;
+    /*더 큰 값이 위로 나타남*/
+}
+
+.pos_absolute:nth-of-type(2) {
+    left: 50%;
+    z-index: 1;
+    /*팝업창 우선순위 바꿔줌*/
+}
+
+
+/*relative*/
+.pos_relative {
+    position: relative;
+    left: 0px;
+    top: 0;
+    width: 500px;
+    border: 1px solid #000;
+    /* margin: 0 auto;*/
+}
+
+.pos_relative img {
+    width: 100%;
+}
+
+.pos_relative p {
+    position: absolute;
+    background: rgba(22, 10, 50, 0.4);
+    padding: 15px 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.pos_1 {
+    width: 1000px;
+    margin: 700px auto 200px auto;
+    position: relative;
+}
+
+.pos_1 ul {
+    border: 1px solid #000;
+}
+
+.pos_1 ul::after {
+    content: '';
+    display: block;
+    
+    clear: both;
+}
+
+.pos_1 ul li {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pos_1 ul li:nth-of-type(3) {
+    margin-right: 0;
+    
+}
+
+.pos_1 ul li img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.pos_1 ul li p {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: rgba(15, 35, 60, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    /*height:60px;는 글자랑 같이 다올라감 글자도 내려줘야함 line-height:60px;로 같은값 줘야함*/
+    transition: .5s;
+}
+.pos_1 ul li:hover p {bottom: 0;
+    
+}

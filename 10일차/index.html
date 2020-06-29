@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ 
+ 
+  <style>
+      .sns a{
+          background: url('img/ic_instagram.png') /*~day에 따라 아이콘 만 변경해주면됨*/ no-repeat;
+          font-size:0;
+          width: 15px; height: 15px;
+          display: inline-block;/*가로형태*/
+      } /*sns안에있는 모든 a태그*/
+      .sns a:nth-of-type(2){
+        background-position: -33px 0;
+      }
+      .sns a:nth-of-type(3){
+              background-position: -70px 0;
+  
+      }
+    </style>
+   
+   <div class='sns'>
+   <a href="#">facebook</a>
+   <a href="#">twitter</a>
+   <a href="#">instagram</a>
+</div>
+
+   
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+/*font-family: 'Lora', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Ubuntu:wght@300;400&display=swap');*/
+/*font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+html,body{
+/*    background:#dbe5f6;*/
+margin:0;
+}
+ul,li{
+    margin:0;padding:0;
+    list-style:none;
+}
+a{
+   
+    text-decoration: none;
+}
+a:link{text-decoration: none; 
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color:#626262;
+    text-transform: uppercase;
+}
+a:hover{text-decoration: underline;
+    color: #333;
+}
+a:visited{
+    color:#b4ad9e;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+/*   *은 모든 태그를 가리킴*/
+*{
+    font-size: 14px;
+    color: #626262;
+    line-height: 24px;
+    font-family: 'Lora', serif;
+}
+
+h2{font-size: 30px;
+white-space: pre-line;
+margin-bottom: 34px;
+    font-weight: 400;
+}
+small{
+    font-size: 1rem; /* em=곱하기,rem=최상위 요소에 곱하기 */
+    color: #b4ad9e;
+ line-height: 4;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block
+}
+.wC{
+    width: 1060px; margin: 0 auto;
+}
+.mt130{
+    margin-top: 130px !important;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+.mt50{
+    margin-top: 50px !important;
+}
+.mt80{
+    margin-top: 80px !important;
+}
+
+
+#header {
+    padding: 70px 0;
+
+}
+
+#header div {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+#header div:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#header div h1 {
+    float: left;
+}
+
+#header div h1 a {}
+
+#header div h1 a img {}
+
+#header div ul {
+    float: right;
+}
+
+#header div ul li {
+    float: left;
+}
+
+#header div ul li a {
+    padding: 10px 40px;
+    display: inline-block;
+    font-family: 'Lora', serif;
+    color: #626262;
+}
+/*#header div ul li.한칸 안띄어야함, 한칸띄면 li의 자식요소의 active를 찾음 a*/
+#header div ul li.active a{
+    text-decoration: underline;
+}
+
+
+/*footer*/
+#footer{
+    background: #f0f0f0;
+    padding: 40px 0;
+    
+}
+#footer div{position: relative;}
+#footer div p{
+    position: absolute;
+    right: 0; top: 0px;
+}
+#footer div p a{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    font-size: 0;
+    background: url('../../img/ic_site3_sns.png') no-repeat;
+}
+
+#footer div p a:nth-of-type(1){
+    background-position: 6px 0; 
+}
+#footer div p a:nth-of-type(2){   background-position: -26px 0;}
+#footer div p a:nth-of-type(3){   background-position: -60px 0;}
+    
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+/*font-family: 'Lora', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Ubuntu:wght@300;400&display=swap');*/
+/*font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+html,body{
+/*    background:#dbe5f6;*/
+margin:0;
+}
+ul,li{
+    margin:0;padding:0;
+    list-style:none;
+}
+a{
+   
+    text-decoration: none;
+}
+a:link{text-decoration: none; 
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color:#626262;
+    text-transform: uppercase;
+}
+a:hover{text-decoration: underline;
+    color: #333;
+}
+a:visited{
+    color:#b4ad9e;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+/*   *은 모든 태그를 가리킴*/
+*{
+    font-size: 14px;
+    color: #626262;
+    line-height: 24px;
+    font-family: 'Lora', serif;
+}
+
+h2{font-size: 30px;
+white-space: pre-line;
+margin-bottom: 34px;
+    font-weight: 400;
+}
+small{
+    font-size: 1rem; /* em=곱하기,rem=최상위 요소에 곱하기 */
+    color: #b4ad9e;
+ line-height: 4;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block
+}
+.wC{
+    width: 1060px; margin: 0 auto;
+}
+.mt130{
+    margin-top: 130px !important;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+.mt50{
+    margin-top: 50px !important;
+}
+.mt80{
+    margin-top: 80px !important;
+}

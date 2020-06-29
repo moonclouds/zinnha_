@@ -1,0 +1,176 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;700&display=swap');
+@import url(transfonter.org-20200623-131212/stylesheet.css);
+@font-face {
+    font-family: 'Vladimir Script';
+    src: url('VladimirScript.eot');
+    src: url('VladimirScript.eot?#iefix') format('embedded-opentype'),
+        url('VladimirScript.woff2') format('woff2'),
+        url('VladimirScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+#header {
+    background: #fff;
+    padding: 20px 0;
+}
+
+#header > div {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header > div:after {
+    content: '';
+    /*content가있어야 자식들을 감쌈*/
+    clear: both;
+    display: block;
+}
+
+/*logo*/
+#header > div h1 {
+    float: left;
+
+}
+
+#header > div h1 a {
+    font-family: 'Vladimir Script';
+}
+
+
+/*menu*/
+#header > div div {
+    float: left;
+    width: 80%;
+    /* border: 1px solid #000;*/
+    text-align: center;
+}
+
+#header > div div a {
+    display: inline-block;
+    padding: 10px;
+}
+
+/*burger*/
+.menu-trigger {
+    width: 30px;
+    height: 18px;
+    display: inline-block;
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+.menu-trigger span {
+    width: 100%;
+    display: inline-block;
+    height: 2px;
+    margin: 2px 0;
+    background: #000;
+}
+
+.menu-trigger span:nth-of-type(1) {}
+
+.menu-trigger span:nth-of-type(2) {
+    width: 70%
+}
+
+.menu-trigger span:nth-of-type(3) {
+    width: 86%
+}
+
+#container {}
+
+#container .visual {
+    position: relative;
+}
+
+#container .visual > img {
+    width: 100%;
+}
+
+/*중앙box*/
+#container .visual div {
+    width: 780px;
+    padding: 50px 60px;
+    /*780+60=900*/
+    background: #fff;
+    background: #fff;
+
+    position: absolute;
+    left: calc(50% - 450px);
+    top: 40%;
+}
+
+#container .visual div h2 {}
+
+#container .visual div h2 span {
+    font-size: 0;
+    float: right;
+    vertical-align: top;
+    
+    font-size: 0;
+}
+
+
+#container .visual div h2 span a {
+    background: url('../img/ic_instagram.png')
+        /*~day에 따라 아이콘 만 변경해주면됨*/
+        no-repeat;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    /*가로형태*/
+    margin: 0 10px;
+}
+
+/*sns안에있는 모든 a태그*/
+#container .visual div h2 span a:nth-of-type(2) {
+    background-position: -33px 0;
+}
+
+#container .visual div h2 span a:nth-of-type(3) {
+    background-position: -70px 0;
+
+}
+
+
+#container .visual div p:nth-of-type(1) {
+    margin-top: 100px;
+}
+#container .visual div p:nth-of-type(1) img{
+    width: 100%;
+}
+
+#container .visual div p:nth-of-type(2) {
+    white-space: pre-line;
+    font-size: 20px;
+}
+
+#container .visual div p a:nth-of-type(2) {
+    font-family: 'Noto Serif TC', serif;
+}
+
+#container .visual div p:nth-of-type(2) a b {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#container .visual div p a mark:nth-of-type(2) {
+    background-color: aqua;
+}
+
+
+
+
+/*footer*/
+#footer {
+    text-align: center;
+    padding: 100px;
+}

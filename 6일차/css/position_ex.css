@@ -1,0 +1,36 @@
+@import url('common.css');
+
+.pos_ex1 {
+    width: 200px;
+    position: relative;
+
+}
+
+.pos_ex1 >
+
+/*자기자식요소만 ul태그안 자식요소는 상관없음*/img,.pos_ex1 ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.pos_ex1 ul {
+    width: 200%;
+    font-size: 0;
+    left: -200%;
+    z-index: 1;
+    transition: .5s;
+}
+
+    .pos_ex1:hover ul {left: 100%}
+
+    .pos_ex1 ul li {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .pos_ex1 ul li img {
+        width: 100%;
+    }

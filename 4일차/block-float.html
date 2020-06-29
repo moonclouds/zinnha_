@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <ilnk href="css/block-float.css" rel="stylesheet" type="text/css"></ilnk>
+</head>
+
+<body>
+    <style>
+        .f_01 {
+            border: 1px solid #f00;
+            /*  height: 60px;*/
+            overflow: hidden;
+            /*상자넘어서는 안보이게함*/
+        }
+
+        .f_01 p {
+            float: left;
+
+
+        }
+
+        .f-cancel {
+            clear: left;
+        }
+
+        .f_01:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    </style>
+
+    <div class="f_01">
+        <p>left</p>
+        <p>right</p>
+        <!--<div></div>-->
+        <!--::after-->
+    </div>
+
+<style>
+    .f_02{
+        width:1000px;
+        margin:100px auto;
+    }
+    .f_02:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    .f_02 p{width:45%; height:300px;
+        background:#ddd;
+        overflow:hidden;
+    }
+    .f_02 p:nth-of-type(1){float:left;}
+    .f_02 p:nth-of-type(2){float:right;}
+    .f_02 img{width:100%;}
+    
+    </style>
+<div class="f_02">
+    <p><img src="../img/1_mk1-6aYaf_Bes1E3Imhc0A.jpeg";></p>
+    <p></p>
+</div>
+
+
+
+  <div class="f_03">
+    <div>
+        <h1></h1>
+        <ul><li></li></ul>
+    </div>
+    <div></div>
+    
+  
+  
+  
+</body>
+</html>

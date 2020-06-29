@@ -1,0 +1,16 @@
+@import url(common.css);
+/*이용약관 동의*/
+.dl{
+    text-align:left;
+    border: 1px solid #000;
+    padding: 20px 20px 0 20px;
+
+    
+}
+.di dt{ border: 10px solid #000;
+    
+}
+.dl dd{}
+.dl dd strong{color: darkred;}
+.dl dd input{
+    }

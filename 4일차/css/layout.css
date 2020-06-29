@@ -1,0 +1,73 @@
+.layout {}
+
+.layout .nav {
+    float: left;
+    width: 20%;
+    background: #222;
+}
+
+.layout .contents {
+    float: right;
+    width: 75%;
+    min-height: 400px;
+    background: #eee;
+}
+
+/*--nav--*/
+/*100vw,100vh 디바이스의 가로세로사이즈 측정*/
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.layout {
+    height: 100%;
+}
+
+.layout .nav {
+    height: 100%;
+    padding: 40px;
+    width: calc(20% - 80px);
+    /* (숫자 - 숫자 사이 띄어쓰기필수)*/
+}
+
+.layout .nav h1 {
+    color: #ddd;
+    padding: 40px 0;
+}
+
+.layout .nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.layout .nav ul li {
+    border-bottom: 1px solid #555;
+
+}
+
+.layout .nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    /*text기본적으로 들어간 언더라인 뺄때*/
+    padding: 10px;
+    display: block;
+}
+
+.layout .nav ul li a:hover {
+    background: #333;
+}
+
+/*--contents--*/
+
+
+.layout .contents{
+    width: calc(75% - 80px);
+    padding:40px;
+}
+.contents h2{}
+.contents ul{margin:0px; padding: 0; list-style: none;}
+.contents ul li{widows:30%;}
+.contents ul li img{widows: 100%;}
