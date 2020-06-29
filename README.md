@@ -1,2 +1,0 @@
-# zinnha_
-zinnha_
