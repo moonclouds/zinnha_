@@ -1,0 +1,148 @@
+@import url('common.css');
+
+#header {
+    position: absolute;
+    /*컨텐츠 위에 떠있을때*/
+    left: 0%;
+    top: 0;
+    width: 100%;
+    padding: 80px 0;
+    
+    /*한 수만 쓰면 상하좌우 에 다생김*/
+}
+
+#header > div {
+    
+    width: 82%;
+    /*해상도에 따라 가로 스크롤 이 생길수 있음(px)그래서%로 하는게 더 좋음*/
+    margin: 0 auto;
+    /*가운데 정렬*/
+    display: flex;
+    /*explore12미만 에서는 안됨,가로 정렬*/
+    justify-content: space-between;
+
+}
+
+/*menu*/
+#header > div .menu-trigger {}
+
+#header > div .menu-trigger a {
+    display: block;
+    width: 26px;
+}
+
+#header > div .menu-trigger a span {
+    width: 100%;
+    display: block;
+    height: 2px;
+    margin: 2px 0;
+    background: #fff;
+    margin: 5px 0;
+}
+
+/*logo*/
+#header > div h1 {}
+
+#header > div h1 a {}
+
+#header > div h1 a img {}
+
+/*lang*/
+#header > div .lang {
+    position: relative;
+
+}
+
+#header > div .lang a {
+    /*a태그가 글자 컬러를 가지고 있음*/
+    color: #fff;
+}
+
+#header > div .lang a:after {
+    /*▼ 만들기*/
+    content: '';
+    border: 3px solid transparent;
+    border-top: 8px solid #fff;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
+#header > div .lang ul {
+    /*background: #fff;*/
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transition: .5s;
+    opacity: 0;
+    /*display: none;*/
+    /* //브라우저가 ul태그를 감지 못함*/
+    /*opacity: 0;*/
+    /*영역은 그래도 있지만 투명도로 감춤*/
+    /*visibility: hidden;*/
+    /*영역은 그대로지만 요소를 감춤*/
+
+}
+
+#header > div .lang ul li {
+    padding: 5px;
+    color: #fff;
+}
+
+#header > div .lang:hover ul {
+   /* display: block;*/
+    opacity: 1;
+}
+/*visual*/
+.visual{}
+.visual .slide{}
+.visual .slide p:nth-of-type(1){
+    font-size: 0;
+}
+.visual .slide p:nth-of-type(1) img{
+    width: 50%;
+}
+.visual .slide p:nth-of-type(2){
+    position: absolute;
+    left: 0; top: 0%;
+    text-align: center;
+    width: 100%; height:100%;
+    padding-top:20%;
+    background:rgba(0,0,0,0.4);
+}
+.visual .slide p:nth-of-type(2) strong{
+    font-size: 5em;
+    color: #fff;
+    display: block;
+  
+}
+.visual .slide p:nth-of-type(2) a{
+    border: 1px solid #555;
+    color: #fff;
+    padding: 15px 40px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
