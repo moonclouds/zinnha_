@@ -1,0 +1,136 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/*font-family: 'Courgette', cursive;*/
+.wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+#header {
+    height: 68px;
+    background-color: #1e1e1c;
+
+
+}
+
+#header div {}
+
+#header > .nav {
+
+
+    font-size: 15px;
+    /* letter-spacing: 0.55px;*/
+    float: left;
+    color: #e7e7db;
+    margin: 26px 76px;
+    word-spacing: 50px;
+}
+
+#header > .lang {
+    font-size: 15px;
+
+    letter-spacing: 0.55px;
+    float: right;
+    color: #7c7c7c;
+    font-size: 15px;
+    margin: 26px 76px;
+
+}
+
+#header > .lang a:nth-of-type(1) {
+    color: #e26c48;
+
+}
+
+#header > .lang a:nth-of-type(2) {}
+
+#container {
+
+}
+
+#container .visual {
+    height: 860px;
+    position: relative;
+
+}
+
+#container .introduce {
+    position: absolute;
+    top: 140px;
+    left: 10%;
+
+}
+
+#container .introduce div {
+   
+   
+}
+
+#container .introduce div h1 {
+ font-size: 5em;
+    font-family: 'Courgette', cursive;
+    color: azure;
+}
+
+#container .introduce div h1 strong {
+    font-size: 1em;
+    /*부모요소가 폰트사이즈를 가지고 있어서 안먹음*/
+    color: #fffdc6;
+}
+
+#container .introduce div p {
+    color: lightgray;
+    margin-top:50px;
+}
+#container .introduce > p {
+    margin-top: 100px;
+}
+    
+#container .introduce span {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    
+}
+#container .sns {
+ 
+   position: absolute;/*absolute위치선정할때는 margin말고 top..이런걸로*/
+bottom:70px; right: 76px;
+    font-weight: bold;
+    font-family: AdobeGothicStd;
+    
+
+}
+
+.sns a {
+    color: antiquewhite;
+   
+}
+
+
+
+#footer {
+/*height: 187px;*/
+ 
+    background-color: #1e1e1c;
+
+    text-align: center;
+    overflow: hidden;/*float넣어줄때 같이 써줌*/
+
+    /*  text-transform: capitalize;*/
+
+
+}
+
+#footer span {
+    float: left;
+    margin: 76px auto 86px;
+}
+
+
+#footer p {
+    float: right;
+    margin: 77px 48px 81px auto;
+}

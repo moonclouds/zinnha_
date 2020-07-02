@@ -1,0 +1,45 @@
+html,
+body {
+   margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+/*    display:inline-block;*/
+ /*   
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color:#b4ad9e;
+    text-transform: uppercase;*/
+}
+a:hover {
+    text-decoration: underline;
+   /* color:#333 !important;*/
+}
+a:visited {
+    color:#b4ad9e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    font-size: 14px;
+    color: #626262;
+   /* line-height: 24px;*/
+/*    font-family: 'Lora', serif;*/
+}
