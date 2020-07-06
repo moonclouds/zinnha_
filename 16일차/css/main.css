@@ -1,136 +1,77 @@
 @import url('common.css');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-/*font-family: 'Courgette', cursive;*/
 .wrap {
     width: 1400px;
     margin: 0 auto;
+    background: #000;
 }
-
 
 #header {
-    height: 68px;
-    background-color: #1e1e1c;
-
-
+    overflow: hidden;
+    padding: 40px;
 }
 
-#header div {}
-
-#header > .nav {
-
-
-    font-size: 15px;
-    /* letter-spacing: 0.55px;*/
+#header .nav {
     float: left;
-    color: #e7e7db;
-    margin: 26px 76px;
-    word-spacing: 50px;
 }
 
-#header > .lang {
-    font-size: 15px;
+#header .nav a {
+    color: #fff;
+    padding: 0 20px;
+    font-size: 16px;
+}
 
-    letter-spacing: 0.55px;
+#header .lang {
     float: right;
-    color: #7c7c7c;
-    font-size: 15px;
-    margin: 26px 76px;
-
 }
 
-#header > .lang a:nth-of-type(1) {
-    color: #e26c48;
-
+#header .lang a {
+    color: #fff;
 }
 
-#header > .lang a:nth-of-type(2) {}
 
-#container {
-
-}
-
-#container .visual {
-    height: 860px;
+.visual {
     position: relative;
-
 }
 
-#container .introduce {
+.visual > img {}
+
+.visual .text {
     position: absolute;
-    top: 140px;
     left: 10%;
-
+    top: 10%;
 }
 
-#container .introduce div {
-   
-   
+.visual .text h2 {
+    font-size: 5em;
+    color: #fff;
+    white-space: pre-line;
 }
 
-#container .introduce div h1 {
- font-size: 5em;
-    font-family: 'Courgette', cursive;
-    color: azure;
+.visual .text p {
+    color: #777;
 }
 
-#container .introduce div h1 strong {
-    font-size: 1em;
-    /*부모요소가 폰트사이즈를 가지고 있어서 안먹음*/
-    color: #fffdc6;
+.visual .text div {
+    margin-top:100px;
 }
 
-#container .introduce div p {
-    color: lightgray;
-    margin-top:50px;
+.visual .text div span {
+    white-space: pre-line;
+    color:#fff;
+    display:inline-block;
+    margin-right:60px;
 }
-#container .introduce > p {
-    margin-top: 100px;
-}
-    
-#container .introduce span {
+
+.visual .text div span a {
     display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    
-}
-#container .sns {
- 
-   position: absolute;/*absolute위치선정할때는 margin말고 top..이런걸로*/
-bottom:70px; right: 76px;
-    font-weight: bold;
-    font-family: AdobeGothicStd;
-    
-
+    margin-top: 30px;
+    font-style: italic;
+    color:#fff;
 }
 
-.sns a {
-    color: antiquewhite;
-   
-}
-
-
-
-#footer {
-/*height: 187px;*/
- 
-    background-color: #1e1e1c;
-
-    text-align: center;
-    overflow: hidden;/*float넣어줄때 같이 써줌*/
-
-    /*  text-transform: capitalize;*/
-
-
-}
-
-#footer span {
-    float: left;
-    margin: 76px auto 86px;
-}
-
-
-#footer p {
-    float: right;
-    margin: 77px 48px 81px auto;
+.visual .sns{
+    position:absolute;
+    right:10%;
+    bottom:10%;
 }

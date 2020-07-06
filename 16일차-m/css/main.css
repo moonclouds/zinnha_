@@ -1,0 +1,205 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/*font-family: 'Courgette', cursive;*/
+.wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+#header {
+    /*height: 68px;*/
+    background-color: #1e1e1c;
+    overflow: hidden; /*자식이 float가 있을때*/
+
+}
+
+#header div {}
+
+
+#header > .nav {
+
+
+    font-size: 15px;
+    /* letter-spacing: 0.55px;*/
+    float: left;
+    color: #e7e7db;
+    margin: 26px 76px;
+    word-spacing: 50px;
+}
+
+#header > .lang {
+    font-size: 15px;
+
+    letter-spacing: 0.55px;
+    float: right;
+    color: #7c7c7c;
+    font-size: 15px;
+    margin: 26px 76px;
+
+}
+
+#header > .lang a:nth-of-type(1) {
+    color: #e26c48;
+
+}
+
+#header > .lang a:nth-of-type(2) {}
+
+#container {
+
+}
+
+#container .visual {
+   /* height: 860px;*/
+    position: relative;
+
+}
+
+#container .introduce {
+    position: absolute;
+    top: 140px;
+    left: 10%;
+
+}
+
+
+#container .introduce div {
+   
+   
+}
+
+#container .introduce div h1 {
+ font-size: 5em;
+    font-family: 'Courgette', cursive;
+    color: azure;
+}
+
+#container .introduce div h1 strong {
+    font-size: 1em;
+    /*부모요소가 폰트사이즈를 가지고 있어서 안먹음*/
+    color: #fffdc6;
+}
+
+#container .introduce div p {
+    color: lightgray;
+    margin-top:50px;
+}
+#container .introduce > p {
+    margin-top: 100px;
+}
+    
+#container .introduce span {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    
+}
+#container .sns {
+ 
+   position: absolute;/*absolute위치선정할때는 margin말고 top..이런걸로*/
+bottom:70px; right: 76px;
+    font-weight: bold;
+    font-family: AdobeGothicStd;
+    
+
+}
+
+.sns a {
+    color: antiquewhite;
+   
+}
+
+.about{
+    background-color: black;
+    padding: 5%;
+}
+.about h2{}
+.about span{
+    display: inline-block;
+    width: 46%;
+    vertical-align: middle;
+    position: relative;
+    
+    
+}
+.about span:nth-of-type(1){}
+.about span:nth-of-type(2){
+    white-space: pre-line;
+    padding-left: 5%;
+ 
+}
+.about span:nth-of-type(2) strong{
+    color:#fff; font-size: 1.4em;
+    font-weight: normal;
+}
+
+.about span em{
+    position: absolute;
+    bottom: -20%; left: 5%;
+    color: white;
+    font-size: 5em;
+    white-space: pre-line;
+}
+
+.detail{
+    padding: 60px;
+    background: #f3f3f3;
+    text-align: center;
+}
+.detail strong{
+    font-size: 1.6em;
+    font-weight: normal;
+    font-style: italic;
+}
+.detail p{
+    white-space: pre-line;
+}
+.detail a{
+    background: #5abac0;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#footer {
+height: 187px;
+ 
+    background-color: #1e1e1c;
+
+    text-align: center;
+    overflow: hidden;/*float넣어줄때 같이 써줌*/
+
+      text-transform: capitalize;
+
+
+}
+
+#footer span {
+    float: left;
+margin: 77px 79px 81px ;
+   
+}
+
+
+#footer p {
+    float: right;
+    margin: 77px 48px 81px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*block:div,h1,p,ul,li
+inline:span,a,b,img,em,
+*/

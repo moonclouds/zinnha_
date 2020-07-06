@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+
+    <p>
+        <h1>p,h태그는 인라인만 가능</h1>
+    </p>
+
+    <style>
+        .block_2 {
+            /*반드시 부모요소에는*/
+            overflow: hidden;
+        }
+
+        .block_2 .left {
+            float: left;
+            /*div의 줄바꿈효과 사라짐*/
+        }
+
+        .block_2 .right {
+            float: right;
+        }
+
+    </style>
+
+    가로콘텐츠 보이면 이렇게 외워서하기
+    <div class="block+s2">
+        <div class="left">좌측</div>
+        <div class="right">우측</div>
+    </div>
+    <!--복잡한콘텐츠에 사용-->
+    =
+    <style>
+        .inline-block {}
+
+        .inline-block span {
+            border: 1px solid #f00;
+            font-size: 5em;
+            padding: 50px;
+        }
+
+    </style>
+    <div class="inline-block">
+        <span>좌측</span>
+        <span>우측</span>
+    </div>
+    <!--간단한콘텐츠에사용-->
+
+
+    <!--    *블럭요소(가로콘텐츠)
+    -float,flex,grid
+    특징)
+    1. 박스유형의 콘텐츠로 margin:0 auto를 설정하면
+    좌우에 여백을 auto를 설정하여 화면 중앙으로 정렬됨(단 좌우여백이 확보 되어 있을때 가능)
+    2.자식요소로 모든 태그를 허용함(단 p,h태그는 인라인만 가능)
+    3.모든태그를 허용하므로 복잡한 구도에 많이 사용됨(큰 그릇)
+    
+    
+    inline-block을  묶어주는건 span밖에없음
+< src=" alt="> 자식요소들이 들어올수없음 (image,block요소)
+    <input type="text">
+    <select>글쓰기,회원가입
+<option>010</option>
+</html>
+</html></select>
+<button></button>
+   
+    *인라인요소 (가로 콘텐츠 및 가로정렬)
+    -정렬을 하기위해선 inline-block(컨텐츠 사이즈 에 따라 변해서 가로사이즈 설정해야 가로정렬이됨)
+    특징)
+    1.콘텐츠 크기에 따라 가로사이즈가 유동적임,가로사이즈 설정안하면 저절로 떨어져서 세로 컨텐츠가됨
+    2.vertical-align(가로유형의 콘텐츠에서 콘텐츠들간의 세로 중앙정렬이 가능)
+    3.블럭요소,인라인요소 모두다 사용가능(간단한 콘텐츠에 많이 사용됨)
+    대략(인라인요소가 80%,블럭요소 10~20%)
+
+
+    *포지션(콘텐츠 위로 위치잡기)
+    -콘텐츠 위치 설정 (position-relative,absolute,fixed)
+    특징)
+    1.다른 콘텐츠 위로 겹치는 상황(absolute,fixed)
+    2.absolute는 레이어팝업으로 브라우저를 중심으로 한 콘텐츠와,부모요소(relative)안에서 좌표값이 설정되는 콘텐츠가 존재한다.
+    3.fixed는 부모가 최상위 태그(html)를 가리키며 스크롤에 상관없이 콘텐츠가 고정됨
+      -->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
