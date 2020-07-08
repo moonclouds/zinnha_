@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favi.ico">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/favi.ico">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="head">
+            <h1><a href="#">LOGO</a></h1>
+            <div>
+                <!--<div class="active">-->
+                <!--없다가 클릭하면 나오는-->
+
+
+                <a><img src="img/ic_menu.png" alt=""></a>
+                <ul>
+                    <li><a href="#">company</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">customer</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.head div');
+        menu.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+
+    </script>
+
+
+    <diiv id="container">
+        <div class="visual">
+            <strong>Portfolio</strong>
+            <p>
+                Our everyday work is presented here, we do what we love,
+                Case studies, video presentations and photo-shootings below.</p>
+        </div>
+
+        <div class="list">
+            <!-- button,list2개요소-->
+            <div class="tab">
+                <a href="#" class="active">ALL</a>
+                <a href="#">Furniture</a>
+                <a href="#">Logo</a>
+                <a href="#">People</a>
+                <a href="#">Print</a>
+            </div>
+            <ul>
+                <li data-name="People">
+                    <!--사용자가 임의로 속성을주는 data-name-->
+                    <p><img src="img/img-1.jpg" alt="">
+                        <!--img는 거의대부분 p tag-->
+                    </p>
+                    <p>
+                        <code>Album Covers</code>
+                        <!--제목-->
+                        <code> People</code>
+                        <!--code(inline)기능이 바뀔거같을때? 분류-->
+
+                </li>
+
+                <li data-name="Print">
+                    <p><img src="img/img-2.jpg" alt="">
+                        <!--img는 거의대부분 p tag-->
+                    </p>
+                    <p>
+                        <code>Adestra</code>
+                        <!--제목-->
+                        <code> Print</code>
+                        <!--code(inline)기능이 바뀔거같을때? 분류-->
+
+                </li>
+
+                <li data-name="People">
+                    <p><img src="img/img-3.jpg" alt="">
+                        <!--img는 거의대부분 p tag-->
+                    </p>
+                    <p>
+                        <code>Desk Concept</code>
+
+                        <code> Furniture</code>
+
+
+                </li>
+
+                <li data-name="Logo">
+                    <p><img src="img/img-4.jpg" alt="">
+
+                    </p>
+                    <p>
+                        <code>Multi Color</code>
+
+                        <code>Logo
+                        </code>
+
+                </li>
+
+                <li data-name="Furniture">
+                    <p><img src="img/img-5.jpg" alt="">
+
+                    </p>
+                    <p>
+                        <code>Verein </code>
+
+                        <code> Furniture</code>
+
+
+                </li>
+
+                <li data-name="Print">
+                    <p><img src="img/img-6.jpg" alt="">
+
+                    </p>
+                    <p>
+                        <code>Ethics for Design </code>
+
+                        <code> Print</code>
+
+
+                </li>
+
+                <li data-name="Print">
+                    <p><img src="img/img-7.jpg" alt="">
+
+                    </p>
+                    <p>
+                        <code>Cloud Inc </code>
+
+                        <code> Print
+                        </code>
+
+                </li>
+                <li data-name="Print">
+                    <p><img src="img/img-8.jpg" alt="">
+
+                    </p>
+                    <p>
+                        <code>Capricho</code>
+
+                        <code> Print</code>
+
+
+                </li>
+
+                <li data-name="Furniture">
+                    <p><img src="img/img-9.jpg" alt="">
+
+                    </p>
+                    <p>
+                        <code>Afteroom Chair</code>
+                        <code> Furniture</code>
+
+
+                </li>
+            </ul>
+            <!--팝업창 띄우기-->
+            <div class="layout">
+                <p><img src="img/img-2.jpg" alt="">
+                    Adestra </p>
+
+            </div>
+
+
+
+
+        </div>
+
+    </diiv>
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+
+        <img src="img/btn_sns.png" alt="" usemap="#sns">
+        © Copyright 2019 | Kalium Theme by Laborator
+    </div>
+    
+    <map name="sns"><!--w,h,w,h-->
+        <area shape="rect" coords="0,0,41,41" title="facebook" href="http://facebook.com">
+        <area shape="rect" coords="61,0,101,41" title="twitter" href="http://twitter.com">
+        <area shape="rect" coords="122,0,160,41" title="instagram" href="http://instagram.com">
+        <area shape="rect" coords="221,0,160,41" title="baseball" href="http://facebook.com">
+        <area shape="rect" coords="240,0,280,41" title="youtube"href="http://youtube.com">
+    </map>
+
+
+
+    <script>
+        const li = document.querySelector('.list li');
+        const layout = document.querySelector('.layout');
+        li.addEventListener('click', function() {
+            layout.classList.add('active');
+        });
+
+    </script>
+
+
+
+
+
+
+    <script>
+        const tab = document.querySelectorAll('.tab a');
+        let j = 0;
+        for (let i = 0; i < tab.length; i++) {
+            tab[i].addEventListener('click', function() {
+                tab[j].classList.remove('active');
+                this.classList.add('active');
+                j = i;
+            });
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
