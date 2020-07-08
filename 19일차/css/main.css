@@ -1,0 +1,172 @@
+@import url('common.css');
+
+.wrap {
+    background: #000;
+}
+
+.header {
+    padding: 100px 0;
+}
+
+.header > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header > div h1 {
+    float: left;
+    color: aliceblue;
+    font-size: 2.4em;
+}
+
+.header > div > div {
+    float: right;
+}
+
+.header > div > div a {
+    color: aliceblue;
+    padding: 0 20px;
+    /*글씨 띄어쓰기*/
+
+}
+
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    /*중앙정렬*/
+}
+
+.slide {
+    position: relative;
+}
+
+.slide .pic {
+
+    height: 600px;
+    overflow: hidden;
+}
+
+.slide .pic p {
+    position: relative;
+    height: 100%; left: 0;
+    transition: .5s;
+}
+.slide .pic:hover p{left: -300%;} 
+
+
+.slide .pic img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .pic img:nth-of-type(1) {
+    left: 0%;
+}
+
+.slide .pic img:nth-of-type(2) {
+    left: 100%;
+}
+
+.slide .pic img:nth-of-type(3) {
+    left: 200%;
+}
+
+.slide .pic img:nth-of-type(4) {
+    left: 300%;
+}
+
+.btn{
+    position: absolute;
+    left: 0; top:calc(50% - 30px);
+    width: 100%;
+}
+.btn a{
+    display: block;
+    width: 60px; height: 60px;
+    background: #fff;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.btn a:nth-of-type(1){
+    float: left;
+}
+
+.btn a:nth-of-type(2){
+    float: right;
+}
+
+.indi{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.indi a{
+    display: inline-block;
+    width: 10px; height: 10px;
+    background-color: aliceblue;
+    border-radius: 100%
+}
+.indi a.active{
+    background-color:burlywood;
+}
+
+
+.photo{font-size: 0;}
+.photo img{width: 18%;
+margin-right: 2.35%;
+   
+}
+.photo img:last-of-type{margin-right: 0;}
+
+.photo img.active{
+    border: 2px solid #ff0;
+    width:cals(18% - 4px);
+}
+
+.tab{margin: 0 auto;}
+.tab a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    background: white;
+    text-decoration-color: black;
+}
+
+
+.tab a:hover,
+.tab a.active{
+     background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
